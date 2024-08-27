@@ -1,0 +1,54 @@
+.services .service-bottom {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: none;
+      margin-top: 20px;
+  }
+  
+  .skill-item {
+      flex: 1 1 calc(25% - 20px);
+      text-align: center;
+      padding: 20px;
+      box-shadow: 2px 4px 8px rgba(0.1, 0, 0, 0.4);
+      transition: transform 0.4s ease;
+      position: relative; /* Make sure .skill-item is positioned relative for absolute positioning of tooltip */
+  }
+  
+  .skill-item:hover {
+      transform: translateY(-10px);
+  }
+  
+  .skill-item .icon img {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+  }
+  
+  .skill-item h2 {
+      font-size: 1.2rem;
+      margin-top: 10px;
+  }
+  
+  #skill-level {
+      position: absolute;
+      top: 120px; /* Adjust as needed */
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #333;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      opacity: 0; /* Hidden by default */
+      visibility: hidden; /* Hidden by default */
+      font-size: 14px;
+      white-space: nowrap;
+      transition: opacity 0.3s ease, visibility 0.3s ease; /* Add transition effect */
+      z-index: 10; /* Make sure it's on top of other elements */
+  }
+  
+  .skill-item:hover #skill-level {
+      opacity: 1; /* Show tooltip */
+      visibility: visible; /* Show tooltip */
+  }
+  
