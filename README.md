@@ -28,11 +28,6 @@ This is my personal portfolio website, showcasing my skills, projects, and exper
 - **JavaScript**: Adding interactivity and dynamic content.
 - **Font Awesome**: Icons for skills and social media links.
 
-## Screenshots
-
-![Portfolio Homepage](link_to_homepage_screenshot)
-![Skills Section](link_to_skills_section_screenshot)
-![Projects Section](link_to_projects_section_screenshot)
 
 ## Getting Started
 
